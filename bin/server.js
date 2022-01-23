@@ -5,7 +5,6 @@ const app = express();
 const PORT = process.env.PORT || 6969;
 const uri = "mongodb+srv://mbilarusadmin:jgFl35Dhl5FDla8lf5x0F13pw@cluster0.qhdvp.mongodb.net/warehouse?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-
 async function main() {
     await client.connect();
     // GraphQL
